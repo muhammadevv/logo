@@ -1,0 +1,403 @@
+.class{
+  padding: 50px 0;
+
+  &-row{
+    @include flex();
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &-top{
+    @include flex(center, center);
+    gap: 250px;
+
+    @include media(1100){
+      gap: 220px;
+    }
+
+    @include media(1024){
+      gap: 200px;
+    }
+
+    @include media(990){
+      gap: 140px;
+    }
+
+    @include media(768){
+      gap: 130px;
+    }
+
+    @include media(680){
+      gap: 110px;
+    }
+
+    @include media(620){
+      gap: 80px;
+    }
+
+    @include media(580){
+      gap: 40px;
+    }
+
+    @include media(500){
+      gap: 60px;
+    }
+
+    @include media(480){
+      gap: 50px;
+    }
+
+    @include media(440){
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__text{
+      @include media(440){
+        @include flex(center);
+        flex-direction: column;
+      }
+
+      &__h1{
+        color: #000;
+        font-family: $roboto;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 112%;
+
+        @include media(900){
+          font-size: 30px;
+        }
+
+        @include media(768){
+          font-size: 26px;
+        }
+
+        @include media(660){
+          font-size: 24px;
+        }
+
+        @include media(440){
+          text-align: center;
+        }
+      }
+
+      &__p{
+        width: 509px;
+        color: #000;
+        font-family: $roboto;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 160%;
+        margin-top: 14px;
+
+        @include media(900){
+          width: 450px;
+          font-size: 14px;
+          margin-top: 12px;
+        }
+
+        @include media(720){
+          width: 340px;
+          font-size: 13px;
+          margin-top: 10px;
+        }
+
+        @include media(580){
+          width: 310px;
+        }
+
+        @include media(500){
+          width: 260px;
+        }
+
+        @include media(440){
+          text-align: center;
+          width: 360px;
+        }
+
+        @include media(400){
+          width: 340px
+        }
+
+        @include media(375){
+          width: 260px;
+          text-transform: capitalize
+        }
+      }
+    }
+
+    &__img{
+
+      @include media(440){
+        @include flex(center);
+        flex-direction: column;
+      }
+
+      &__img{        
+        width: 240px;
+        height: 260px;
+        overflow: hidden;
+        border-radius: 3px;
+        box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.20);
+
+        @include media(900){
+          width: 200px;
+          height: 240px;
+        }
+
+        @include media(768){
+          width: 160px;
+          height: 200px;
+        }
+
+        @include media(580){
+          width: 140px;
+          height: 180px;
+        }
+
+        @include media(480){
+          width: 120px;
+          height: 160px;
+        }
+
+        @include media(440){
+          width: 160px;
+          height: 200px;
+        }
+
+        @include media(375){
+          width: 140px;
+          height: 180px;
+        }
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+      &__p{
+        color: #777;
+        text-align: center;
+        font-family: $roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 175%;
+        margin-top: 20px;
+
+        @include media(440){
+          margin-top: 10px
+        }
+      }
+    }
+  }
+
+  &-bottom{
+    @include flex(center, center);
+    gap: 200px;
+
+    @include media(1100){
+      gap: 180px;
+    }
+
+    @include media(1024){
+      gap: 160px;
+    }
+
+    @include media(990){
+      gap: 140px;
+    }
+
+    @include media(900){
+      gap: 120px;
+    }
+
+    @include media(768){
+      gap: 100px;
+    }
+
+    @include media(680){
+      gap: 80px;
+    }
+
+    @include media(620){
+      gap: 60px;
+    }
+
+    @include media(580){
+      gap: 40px;
+    }
+
+    @include media(500){
+      gap: 40px;
+    }
+
+    @include media(480){
+      gap: 20px;
+    }
+
+    @include media(440){
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__text{
+      @include media(440){
+        @include flex(center);
+        flex-direction: column;
+        order: -1;
+      }
+
+      &__h1{
+        color: #000;
+        font-family: $roboto;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 112%;
+
+        @include media(900){
+          font-size: 30px;
+        }
+
+        @include media(768){
+          font-size: 26px;
+        }
+
+        @include media(660){
+          font-size: 24px;
+        }
+
+        @include media(440){
+          text-align: center;
+        }
+      }
+
+      &__p{
+        width: 509px;
+        color: #000;
+        font-family: $roboto;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 160%;
+        margin-top: 14px;
+
+        @include media(990){
+          width: 440px;
+          font-size: 14px;
+          margin-top: 12px;
+        }
+
+        @include media(768){
+          width: 420px;
+        }
+
+        @include media(720){
+          width: 340px;
+          font-size: 13px;
+          margin-top: 10px;
+        }
+
+        @include media(660){
+          width: 320px;
+        }
+
+        @include media(580){
+          width: 300px;
+        }
+
+        @include media(540){
+          width: 280px;
+        }
+
+        @include media(500){
+          width: 260px;
+        }
+
+        @include media(440){
+          text-align: center;
+          width: 360px;
+        }
+
+        @include media(400){
+          width: 340px
+        }
+
+        @include media(375){
+          width: 260px;
+          text-transform: capitalize
+        }
+      }
+    }
+
+    &__img{
+
+      @include media(440){
+        @include flex(center);
+        flex-direction: column;
+      }
+
+      &__img{        
+        width: 260px;
+        height: 220px;
+        overflow: hidden;
+        border-radius: 3px;
+        box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.20);
+
+        @include media(900){
+          width: 240px;
+          height: 200px;
+        }
+
+        @include media(768){
+          width: 200px;
+          height: 160px;
+        }
+
+        @include media(660){
+          width: 200px;
+          height: 160px;
+        }
+
+        @include media(580){
+          width: 170px;
+          height: 130px;
+        }
+
+        @include media(480){
+          width: 160px;
+          height: 120px;
+        }
+
+        @include media(440){
+          width: 200px;
+          height: 150px;
+        }
+
+        @include media(375){
+          width: 140px;
+          height: 110px;
+        }
+
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+      &__p{
+        color: #777;
+        text-align: center;
+        font-family: $roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 175%;
+        margin-top: 20px;
+
+        @include media(440){
+          margin-top: 10px
+        }
+      }
+    }
+  }
+}

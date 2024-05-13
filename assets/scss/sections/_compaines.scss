@@ -1,0 +1,149 @@
+.compaines{
+  background-color: #D3D3D3;
+
+  &-row{
+    padding: 40px 0;
+    @include flex(center, space-between);
+
+    @include media(660){
+      padding: 20px 0;
+    }
+
+    @include media(375){
+      padding: 10px 0;
+    }
+  }
+
+  &-link{
+
+    &.facebook svg{
+      @include media(660){
+        width: 20px;
+        height: 20px;
+      }
+      @include media(375){
+        width: 10px;
+        height: 10px;
+      }
+      }
+
+    &.stripe svg{
+      @include media(660){
+        width: 50px;
+        height: 20px;
+      }
+
+      @include media(375){
+        width: 30px;
+        height: 10px;
+      }
+    }
+
+    &.apple svg{
+      @include media(660){
+        width: 20px;
+        height: 20px;
+      }
+      @include media(375){
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+    &.fitbit svg{
+      @include media(660){
+        width: 60px;
+        height: 20px;
+      }
+      @include media(375){
+        width: 30px;
+        height: 10px;
+      }
+    }
+
+    &.buzzfeed svg{
+      @include media(660){
+        width: 70px;
+        height: 20px;
+      }
+      @include media(375){
+        width: 40px;
+        height: 10px;
+      }
+    }
+
+    &.sega svg{
+      @include media(660){
+        width: 50px;
+        height: 20px;
+      }
+      @include media(375){
+        width: 30px;
+        height: 10px;
+      }
+    }
+
+    &.dropbox svg{
+      @include media(660){
+        width: 24px;
+        height: 24px;
+      }
+      @include media(375){
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    &.google svg{
+      @include media(660){
+        width: 20px;
+        height: 20px;
+      }
+      @include media(375){
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+    &.facebook:hover svg path{
+      fill: #3984ff;
+    }
+
+    &.stripe:hover svg path{
+      fill: #8d95ec;
+    }
+
+    &.dropbox:hover svg path{
+      fill: #3984ff;
+    }
+
+    &.apple:hover svg g {
+      fill: #000;
+    }
+
+    &.fitbit:hover svg path{
+      fill: #39CCCC;
+    }
+
+    &.buzzfeed:hover svg g {
+      fill: #ee3624;
+    }
+
+    &.sega:hover svg g path{
+      fill: #0060a8;
+    }
+
+    &.google:hover svg .blue{
+      fill: #4285F4;
+    }
+    &.google:hover svg .green{
+      fill: #34A853;
+    }
+    &.google:hover svg .yellow{
+      fill: #FBBC05;
+    }
+    &.google:hover svg .red{
+      fill: #EB4335;
+    }
+  }
+}
